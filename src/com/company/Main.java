@@ -12,7 +12,7 @@ public class Main {
             nums[i]=scan.nextInt();
         }
         int min=nums[0];
-        for(var i=0; i<n; i++)
+        for(int i=0; i<n; i++)
         {
             if (min>nums[i])
             {
@@ -20,11 +20,12 @@ public class Main {
             }
         }
         int S=0;
-        for(var i=0; i<n; i++)
+        for(int i=0; i<n; i++)
         {
-            S=S+nums[i];
+            S+=nums[i];
         }
         System.out.println("Сумма минимального и среднего значения:  " +(S/n+min));
+        System.out.println(min);
 
 
     }
